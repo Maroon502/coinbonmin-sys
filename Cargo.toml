@@ -17,8 +17,7 @@ authors = [
 default = ["bonmin-src/default"]
 
 [dependencies]
-# bonmin-src = { version = "0.1", default-features = false }
-bonmin-src ={ path = "../bonmin-src" }
+bonmin-src = { version = "0.1", default-features = false }
 
 [build-dependencies]
 bindgen = "0.69"
