@@ -1,0 +1,25 @@
+[package]
+name = "coinbonmin-sys"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+license = "Apache-2.0"
+documentation = "https://docs.rs/coinbonmin-sys/"
+description = "The low-level bindings to the COIN-OR Clp library."
+repository = "https://github.com/Maroon502/coinbonmin-sys.git"
+keywords = ["coin-or", "Bonmin", "bonmin-sys", "coinbonmin-sys"]
+readme = "README.md"
+authors = [
+    "Maroon502<maroon502@outlook.com>"
+]
+
+[features]
+default = ["bonmin-src/default"]
+
+[dependencies]
+# bonmin-src = { version = "0.1", default-features = false }
+bonmin-src ={ path = "../bonmin-src" }
+
+[build-dependencies]
+bindgen = "0.69"
+coin-build-tools = "0.2"
