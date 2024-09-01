@@ -20,5 +20,5 @@ default = ["bonmin-src/default"]
 bonmin-src = { version = "0.1", default-features = false }
 
 [build-dependencies]
-bindgen = "0.69"
+bindgen = "0.70"
 coin-build-tools = "0.2"
